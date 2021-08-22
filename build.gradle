@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+    id 'checkstyle'
+}
+
+sourceCompatibility = 11
+targetCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+test {
+    testLogging {
+        events 'PASSED', 'FAILED', 'SKIPPED'
+    }
+}
+
+checkstyle {
+    toolVersion '8.45.1'
+    configFile file("config/checkstyle/checkstyle.xml")
+}
+
+checkstyleMain {
+    source ='src/main/java'
+}
+
+checkstyleTest {
+    source ='src/test/java'
+}
