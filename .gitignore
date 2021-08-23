@@ -2,7 +2,7 @@ out/*
 .idea/*
 *.iml
 .gradle/*
-.build/*
+build/*
 bin/*
 .classpath
 .project
