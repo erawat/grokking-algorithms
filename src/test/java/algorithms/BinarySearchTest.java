@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class BinarySearchTest {
 
   @Test
-  void binarySearch() {
+  void testBinarySearch() {
     BinarySearch bs = new BinarySearch();
     int[] array = {2, 5, 6, 10, 20, 21, 25};
     assertEquals(0, bs.binarySearch(array, 2));
