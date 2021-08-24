@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.chapter2;
 
 
 public class SelectionSort {

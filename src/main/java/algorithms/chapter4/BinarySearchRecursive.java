@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.chapter4;
 
 public class BinarySearchRecursive {
 

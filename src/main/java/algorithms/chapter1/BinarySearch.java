@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.chapter1;
 
 /**
  * Iterative Binary Search.

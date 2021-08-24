@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.chapter2;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
